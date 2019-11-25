@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <link href="index.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>HICKIES Originals</h1>
+    </header>
+        <span id="star rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span id="views">1,293 reviews</span>
+        <br>
+        <span id="price">$14.99</span>
+        <span id="old_price">$17.99</span>
+        <span id="discount">25% OFF</span>
+        <p >ONLINE EXCLUSIVE</p>
+        
+
+        <form oninput="chosenColor.value=color.value" action="#modal1">
+                <p ><b>COLOR:</b> <output name = "chosenColor">red</output></p>
+            
+            <fieldset> 
+                <label for="red" class="radioContainer">
+                    <input type="radio" name="color" id="red" value="red" checked>
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="blue" class="radioContainer">
+                    <input type="radio" name="color" id="blue" value="blue">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="black" class="radioContainer">
+                    <input type="radio" name="color" id="black" value="black">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="white" class="radioContainer">
+                    <input type="radio" name="color" id="white" value="white">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="goldenrod" class="radioContainer">
+                    <input type="radio" name="color" id="goldenrod" value="goldenrod">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="gold" class="radioContainer">
+                    <input type="radio" name="color" id="gold" value="gold">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="darkblue" class="radioContainer">
+                    <input type="radio" name="color" id="darkblue" value="darkblue">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="darkorchid" class="radioContainer">
+                    <input type="radio" name="color" id="darkorchid" value="darkorchid">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="deeppink" class="radioContainer">
+                    <input type="radio" name="color" id="deeppink" value="deeppink">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="khaki" class="radioContainer">
+                    <input type="radio" name="color" id="khaki" value="khaki">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="lightgrey" class="radioContainer">
+                    <input type="radio" name="color" id="lightgrey" value="lightgrey">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="greenyellow" class="radioContainer">
+                    <input type="radio" name="color" id="greenyellow" value="greenyellow">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="maroon" class="radioContainer">
+                    <input type="radio" name="color" id="maroon" value="maroon">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="orange" class="radioContainer">
+                    <input type="radio" name="color" id="orange" value="orange">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="peru" class="radioContainer">
+                    <input type="radio" name="color" id="peru" value="peru">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="powderblue" class="radioContainer">
+                    <input type="radio" name="color" id="powderblue" value="powderblue">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="palegreen" class="radioContainer">
+                    <input type="radio" name="color" id="palegreen" value="palegreen">
+                    <span class="circle"></span>  
+                </label>
+
+                <label for="orangered" class="radioContainer">
+                    <input type="radio" name="color" id="orangered" value="orangered">
+                    <span class="circle"></span>  
+                </label>
+
+            </fieldset>
+            <P>Size Guide</P>
+            <P>Your Custom Fit</P>
+            
+            <output name="itemCount" id="itemCount">0</output>
+            <a href="#modal1"><input type="submit" value="Add to Cart"></a>
+            
+        </form>
+
+        <hr>
+        DETATILS
+        <hr>
+
+        <a href="" target="_blank" rel="noopener noreferrer" class="help">Need Help?</a>
+        <br><br>
+        <a href="" target="_blank" rel="noopener noreferrer">Shipping & Returns</a>
+
+        <div id="modal1" class="overlay">
+            <div class="modal">
+                <p>Please add the quantity of the Item you have selected</p>
+                <span></span>
+                <div id="addOrRemove">
+                    <button id="remove">-</button>
+                    <div id="quantity">0</div>
+                    <button id="add">+</button>
+                </div>
+                <div id="buttonGroup">
+                    <a href="#"><button id="agree">Agree</button></a>
+                    <a href="#"><button id="cancel">Cancel</button></a>
+                </div>
+                
+            </div>
+        </div>
+    </body>
