@@ -1,0 +1,360 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    width: 700px;
+    max-width: 95%;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    margin: auto;
+    padding: 2% 5%;
+    box-sizing: border-box;
+}
+
+#starRating{
+    margin-right:15%;
+    font-size: 1.2em;
+}
+
+#views {
+    color: rgb(182, 181, 181);
+    white-space: nowrap;
+}
+
+#price{
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(194, 26, 26);
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+#old_price {
+    color: rgb(182, 181, 181);
+    margin-right: 10%;
+}
+
+#discount {
+    color: rgb(182, 181, 181);
+    white-space: nowrap;
+}
+
+
+output{
+    border-block-color: black;
+}
+
+#output[name="modalColor"]{
+    color:red;
+    margin-top:50%;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.help {
+    cursor: help;
+}
+
+form:first-child{
+    font-weight: bolder;
+}
+
+fieldset{
+    border:none;
+    position: relative;
+    padding:0;
+    margin: 0;
+}
+
+.radioContainer {
+    cursor: pointer;
+}
+
+
+.radioContainer input{
+    display: none;
+}
+
+.radioContainer .circle{
+    display: inline-block;
+    /* position: absolute; */
+    margin-right: 2%;
+    border-radius: 50%;
+    /* background-color: gray; */
+    width:25px;
+    height:25px;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.radioContainer:hover .circle{
+    box-shadow: 0px 0px 0px 1px #ddd;
+}
+
+
+.radioContainer input:checked  + .circle{
+    box-shadow: 0px 0px 0px 1px black;
+}
+
+
+/* Defining the colors of the radio buttons */
+#red + .circle{
+    background-color: red;
+}
+
+#blue + .circle {
+    background-color: blue;
+}
+
+#black + .circle {
+    background-color: black;
+}
+
+#white + .circle {
+    background-color: white;
+}
+
+#goldenrod + .circle {
+    background-color: goldenrod;
+}
+
+#gold + .circle {
+    background-color: gold;
+}
+
+#darkblue + .circle {
+    background-color: darkblue;
+}
+
+#darkorchid + .circle {
+    background-color: darkorchid;
+}
+
+#deeppink + .circle {
+    background-color: deeppink;
+}
+
+#khaki + .circle {
+    background-color: khaki;
+}
+
+#lightgrey + .circle {
+    background-color: lightgrey;
+}
+
+#greenyellow + .circle {
+    background-color: greenyellow;
+}
+
+#maroon + .circle {
+    background-color: maroon;
+}
+
+#orange + .circle {
+    background-color: orange;
+}
+
+#peru + .circle {
+    background-color: peru;
+}
+
+#powderblue + .circle {
+    background-color: powderblue;
+}
+
+#palegreen + .circle {
+    background-color: palegreen;
+}
+
+#orangered + .circle {
+    background-color: orangered;
+}
+
+#plum + .circle {
+    background-color: plum;
+}
+
+/* All colors defined */
+
+#itemCount {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+#cart, #addAgain {
+    cursor: pointer;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    /* min-width: fit-content; */
+    width: 600px;
+    max-width: 70%;
+    height: 100%;
+    border-radius:15px;
+    border:none; 
+    white-space: normal;
+}
+
+#addAgain{
+    width: fit-content;
+    visibility: hidden;
+}
+
+#details{
+    /* position: relative; */
+    padding-top: 20px;
+}
+
+#summary{
+    height: 40px;
+    margin-top: 5px;
+}
+
+/* modal */
+
+.overlay{
+    position: absolute;
+    top:0;
+    right:0;
+    /* bottom: 0; */
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    height: 120%;
+    
+}
+
+/* When the Add to cart button is clicked */
+.overlay:target{
+    visibility: visible;
+    
+    
+}
+
+.modal {
+    background-color: white;
+    position: fixed;
+    /* box-sizing: content-box; */
+    /* width: fit-content; */
+    height: 180px;
+    padding: 15px;
+    min-width: 200px;
+    /* max-width: 70%; */
+    margin: auto;
+    /* margin-top: 30%; */
+    top: 25%;
+    left: 12%;
+    right: 12%;
+    border: 1.5px solid black;
+    overflow: hidden;
+}
+
+#modal2 div{
+    height: fit-content;
+}
+
+
+div#addOrRemove{
+    font-size: 4em;
+    font-weight: 800;
+    white-space: nowrap;
+    position: absolute;
+    
+    /* margin-left: 30%; */
+    right: 35px;
+    
+}
+
+#remove, #add{
+    font-size: 40px;
+    font-weight: inherit;
+    position: relative;
+    bottom: 20px;
+    /* display: inline-block; */
+    padding: 2px 10px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    /* max-height: 1cm; */
+    width:1.3cm;
+    /* max-width: 2cm; */
+    height: 1.3cm;
+    max-height: 1.3cm;
+    overflow: hidden;
+    cursor: pointer;
+    border:none;
+}
+
+#remove{
+    position: relative;
+}
+
+#remove div{
+    display: inline-block;
+    position: absolute;
+    bottom: 2px;
+    padding-right: 10px;
+    transform: scaleX(2);
+}
+
+#quantity{
+    display: inline;
+    position: relative;
+    left: 5%;
+    bottom: 20px;
+}
+
+#add{
+    position: relative;
+    left: 10%;
+}
+
+#add div{
+    display: inline-block;
+    position: absolute;
+    bottom: 1.5px;
+    padding-right: 25px;
+    font-weight: 500;
+    transform: scale(1.8);
+}
+
+#ok, #buttonGroup button {
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1.5px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    
+}
+
+#agree, #ok {
+    background-color: rgba(0,255,0,0.3);
+}
+
+#agree:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#cancel {
+    background-color: rgba(255,0,0,0.3);
+}
+
+#buttonGroup, #ok{
+    position: absolute;
+    /* left: 70%; */
+    bottom: 5px;
+    right: 10px;
+    white-space: nowrap;
+    width: fit-content;
+}
